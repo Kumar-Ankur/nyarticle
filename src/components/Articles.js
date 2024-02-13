@@ -17,47 +17,21 @@ import constant from '../constants/Index';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from '@emotion/styled';
 import {
-  setArticleData,
-  setError,
-  setLoading,
   setselectedArticle,
 } from '../store/slice/articleSlice';
-import { useEffect } from 'react';
+import useFetch from '../customHooks/useFetch';
+
 
 const Article = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
+  useFetch()
+
   const { articlesData, loading, error } = useSelector(
     (state) => state.article,
   );
 
-  useEffect(() => {
-    if (!articlesData.length) {
-      fetchData();
-    }
-  }, [articlesData]);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `${constant.BASE_URL}${process.env.REACT_APP_API_KEY}`,
-      );
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const resp = await response.json();
-      dispatch(setArticleData(resp.results || []));
-      dispatch(setselectedArticle(resp.results[0]));
-      dispatch(setLoading(false));
-    } catch (error) {
-      dispatch(setLoading(false));
-      dispatch(setError(constant.BASE_ERROR));
-    } finally {
-      dispatch(setLoading(false));
-      dispatch(setError(constant.BASE_ERROR));
-    }
-  };
 
   const theme = createTheme({
     palette: {

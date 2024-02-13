@@ -1,48 +1,13 @@
 import { Card, CardMedia, Chip, Divider, Typography } from '@mui/material';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import constant from '../constants/Index';
-import { useEffect } from 'react';
-import {
-    setArticleData,
-    setError,
-    setLoading,
-    setselectedArticle,
-  } from '../store/slice/articleSlice';
+import useFetch from '../customHooks/useFetch';
 
 const ArticleDescription = () => {
   const { id } = useParams();
-  const dispatch = useDispatch()
+  useFetch();
   const { articlesData } = useSelector((state) => state.article);
- 
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch(
-        `${constant.BASE_URL}${process.env.REACT_APP_API_KEY}`,
-      );
-      if (!response.ok) {
-        throw new Error('Failed to fetch data');
-      }
-      const resp = await response.json();
-      dispatch(setArticleData(resp.results || []));
-      dispatch(setselectedArticle(resp.results[0]));
-      dispatch(setLoading(false));
-    } catch (error) {
-      dispatch(setLoading(false));
-      dispatch(setError(constant.BASE_ERROR));
-    } finally {
-      dispatch(setLoading(false));
-      dispatch(setError(constant.BASE_ERROR));
-    }
-  };
-
-
-  useEffect(() => {
-    if(!articlesData.length) {
-        fetchData()
-      }
-  }, [articlesData])
 
   const selectedArticle = articlesData.filter(
     (article) => article.id === Number(id),
@@ -86,7 +51,7 @@ const ArticleDescription = () => {
 
       <Divider style={{ width: '100%' }} />
 
-      <Card style={{ width: '100%'}}>
+      <Card style={{ width: '100%' }}>
         <CardMedia
           component="img"
           style={{ width: '100%', objectFit: 'contain' }}
