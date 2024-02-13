@@ -9,7 +9,6 @@ const ArticleDescription = () => {
   useFetch();
   const { articlesData } = useSelector((state) => state.article);
 
-  console.log('article data', articlesData)
   const selectedArticle = articlesData.filter(
     (article) => article.id === Number(id),
   )[0];

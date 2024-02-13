@@ -5,8 +5,8 @@ import store from "./store";
 function App() {
   return (
     <div className="App" data-testid="app">
-      <Provider store={store}>
-        <ArticleRouter />
+      <Provider store={store} data-testid="provider">
+        <ArticleRouter data-testid="article-router"/>
       </Provider>
       
     </div>
