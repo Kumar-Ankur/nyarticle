@@ -1,0 +1,27 @@
+$primary-color: #9fedd7;
+$secondary-color: #026670;
+$grey: #edeae5;
+$light-yellow: #fff9c7;
+$dark-yellow: #fbe180;
+
+
+@font-face {
+    font-family: 'proximaNovaBold';
+    src: local('proximaNovaBold'), url('../../assets/fonts/proximanovacond-bold.otf') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximaNovaMedium';
+    src: local('proximaNovaMedium'), url('../../assets/fonts/proximanovacond-medium.otf') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximaNovaLight';
+    src: local('proximaNovaLight'), url('../../assets/fonts/proximanovacond-light.otf') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
