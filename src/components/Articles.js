@@ -155,6 +155,7 @@ const Article = () => {
       .map((data, index) => {
         return (
           <Skeleton
+          data-testid={`skeleton-loader-${index}`} 
             animation="wave"
             style={{ width: '400px', height: '400px' }}
             key={index}

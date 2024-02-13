@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleDescription component renders article description correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="article_description_container"
+  >
+    <div
+      class="MuiTypography-root MuiTypography-h2 article_description_container-title css-1sra7t5-MuiTypography-root"
+      role="heading"
+    />
+    <h5
+      class="MuiTypography-root MuiTypography-h5 article_description_container-abstract css-ag7rrr-MuiTypography-root"
+    />
+    <h6
+      class="MuiTypography-root MuiTypography-h6 article_description_container-byline css-2ulfj5-MuiTypography-root"
+    />
+    <h6
+      class="MuiTypography-root MuiTypography-h6 article_description_container-byline css-2ulfj5-MuiTypography-root"
+    >
+      Updated: Invalid Date
+    </h6>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 article_description_container-byline css-2ulfj5-MuiTypography-root"
+    >
+      Published: Invalid Date
+    </h6>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      style="width: 100%;"
+    />
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      style="width: 100%;"
+    >
+      <img
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1255/image-not-found.svg"
+        style="width: 100%; object-fit: contain;"
+      />
+    </div>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      style="width: 100%;"
+    />
+    <div
+      style="display: flex; justify-content: flex-start; align-items: center; gap: 12px;"
+    />
+  </div>
+</DocumentFragment>
+`;

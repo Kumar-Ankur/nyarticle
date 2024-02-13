@@ -1,10 +1,14 @@
-import "./App.css";
 import ArticleRouter from "./router";
+import { Provider } from 'react-redux';
+import store from "./store";
 
 function App() {
   return (
-    <div className="App">
-      <ArticleRouter />
+    <div className="App" data-testid="app">
+      <Provider store={store}>
+        <ArticleRouter />
+      </Provider>
+      
     </div>
   );
 }

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component capturing snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-bifc3e-MuiPaper-root-MuiAppBar-root"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+    >
+      <div
+        class="MuiBox-root css-i9gxme"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-alignCenter css-1txutbl-MuiTypography-root"
+        >
+          NY Most Popular News
+        </h6>
+      </div>
+    </div>
+  </header>
+  <div
+    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgb(255, 255, 255); border-radius: 12px; padding: 20px; text-align: center;"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+      data-testid="ErrorIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"
+      />
+    </svg>
+    <h6
+      class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-18k87ye-MuiTypography-root"
+    >
+      Something went wrong
+    </h6>
+    <p
+      class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-d3wcwz-MuiTypography-root"
+    >
+      Please reload the page and try again
+    </p>
+  </div>
+  <div
+    class="article_container"
+  />
+</DocumentFragment>
+`;

@@ -9,6 +9,7 @@ const ArticleDescription = () => {
   useFetch();
   const { articlesData } = useSelector((state) => state.article);
 
+  console.log('article data', articlesData)
   const selectedArticle = articlesData.filter(
     (article) => article.id === Number(id),
   )[0];
@@ -25,6 +26,7 @@ const ArticleDescription = () => {
         variant="h2"
         component="div"
         className="article_description_container-title"
+        role="heading"
       >
         {selectedArticle?.title}
       </Typography>

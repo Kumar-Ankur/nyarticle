@@ -4,7 +4,7 @@ import ArticleDescription from '../components/ArticleDescription';
 
 const ArticleRouter = () => {
     return (
-        <Router>
+        <Router data-testid="article-router">
             <Routes>
                 <Route exact path='/' element={<Article />}></Route>
                 <Route path="/articleDescription/:id" element={<ArticleDescription />}></Route>
