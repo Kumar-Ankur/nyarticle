@@ -1,0 +1,22 @@
+.article_description_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+
+    &-title {
+        font-weight: 700 !important;
+    }
+
+    &-abstract {
+        text-align: left;
+        font-weight: 500 !important;
+    }
+
+    &-byline {
+        text-align: left;
+        width: 100%;
+        font-weight: 300 !important;
+    }
+}
